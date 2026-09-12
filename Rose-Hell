@@ -149,7 +149,7 @@ CustomAchievements:Grant({
     Title = "Survived the rose coloured hell",
     Desc = "Rose hell, more like no match for me",
     Reason = "Watch out when lights turn reddish pink",
-    Image = "rbxassetid://77454064533741"
+    Image = "rbxassetid://133397789900538"
 }, {
     CheckOwned = false,
     Remember = true
