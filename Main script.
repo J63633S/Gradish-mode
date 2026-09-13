@@ -47,7 +47,7 @@ for i = 12 , 99 , r:NextInteger(8,5,seed) do
 	table.insert(rosesp,r2:NextInteger(i - 4,i + 7,seed + i))
 end
 
-for i = 30 , 99 , r:NextInteger(19,20,seed) do
+for i = 30 , 99 , r:NextInteger(12,19,seed) do
 	table.insert(yellersp,r2:NextInteger(i - 4,i + 7,seed + i))
 end
 
@@ -80,7 +80,7 @@ lastroom.changed:connect(function()
 	end
 if table.find(yellersp, lastroom.Value) then
 		task.spawn(function()
-			task.wait(r3:NextInteger(8,32,lastroom.Value))
+			task.wait(r3:NextInteger(18,23,lastroom.Value))
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/J63633S/Gradish-mode/main/Yeller"))()
 		end)
 	end
