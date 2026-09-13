@@ -10,8 +10,8 @@ local ACHIEVEMENT_IMAGE = "rbxassetid://135626824440706"
 local SURVIVE_ACHIEVEMENT = {
 	Identifier = "Rose hell",
 	Title = "Survived the rose coloured hell",
-	Desc = "Rose hell, more like no match for me",
-	Reason = "Watch out when lights turn reddish pink",
+	Desc = "A hell full of roses",
+	Reason = "Watch out when you hear his arrival",
 	Image = ACHIEVEMENT_IMAGE
 }
 
