@@ -109,7 +109,7 @@ CustomAchievements:Grant({
     Title = "Survived Retter",
     Desc = "You cant run but can hide",
     Reason = "Listen for his rumble",
-    Image = "rbxassetid://77454064533741"
+    Image = "rbxassetid://112112316435238"
 }, {
     CheckOwned = false,
     Remember = true
