@@ -28,16 +28,18 @@ local r3 = Random.new(seed+2)
 local lastroom = game.ReplicatedStorage.GameData.LatestRoom
 local tweenservice = game:GetService("TweenService")
 
-local captions = {"Good Luck"}
+local captions = {"Good Luck","Retter used to look goofy loll"}
 _G.Retter = false
 _G.rose = false
 _G.yeller = false
+_G.rebound = false
 
 _G.insp = true
 
 local Rettersp = {}
 local rosesp = {}
 local yellersp = {}
+local reboundsp = {}
 
 for i = 15 , 95 , r:NextInteger(6,8,seed) do
 	table.insert(Rettersp,r2:NextInteger(i - 4,i + 7,seed + i))
@@ -50,6 +52,11 @@ end
 for i = 30 , 99 , r:NextInteger(12,19,seed) do
 	table.insert(yellersp,r2:NextInteger(i - 4,i + 7,seed + i))
 end
+
+for i = 8 , 99 , r:NextInteger(12,19,seed) do
+	table.insert(reboundsp,r2:NextInteger(i - 4,i + 7,seed + i))
+end
+
 
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Loaded",true)
 warn("Loaded")
@@ -82,6 +89,12 @@ if table.find(yellersp, lastroom.Value) then
 		task.spawn(function()
 			task.wait(r3:NextInteger(18,23,lastroom.Value))
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/J63633S/Gradish-mode/main/Yeller"))()
+		end)
+	end
+if table.find(reboundsp, lastroom.Value) then
+		task.spawn(function()
+			task.wait(r3:NextInteger(5,12,lastroom.Value))
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/J63633S/Gradish-mode/main/Rebounddd"))()
 		end)
 	end
 end)
