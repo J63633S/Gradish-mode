@@ -109,7 +109,7 @@ CustomAchievements:Grant({
     Title = "Survived the Yellers screech",
     Desc = "It hurts my ears!!",
     Reason = "You must avoid going deaf",
-    Image = "rbxassetid://77454064533741"
+    Image = "rbxassetid://137220837858306"
 }, {
     CheckOwned = false,
     Remember = true
