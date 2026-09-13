@@ -88,7 +88,7 @@ end
 
 coroutine.wrap(function()
     for i,v in lights do
-        local color = Color3.fromRGB(150, 255, 255)
+        local color = Color3.fromRGB(0, 100, 255)
         task.spawn(function()
             TweenService:Create(v,TweenInfo.new(1),{Color = color}):Play()
         end)
@@ -97,7 +97,7 @@ end)()
 
 coroutine.wrap(function()
     for i,v in neons do
-        local color = Color3.fromRGB(150, 255, 255)
+        local color = Color3.fromRGB(0, 100, 255)
         task.spawn(function()
             TweenService:Create(v,TweenInfo.new(1),{Color = color}):Play()
         end)
