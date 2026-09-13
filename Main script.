@@ -18,7 +18,7 @@ CustomMusic:Play()
 game.SoundService.AmbientReverb = Enum.ReverbType.Cave
 
 warn("Loading")
-_G.ver = 1
+_G.ver = 1.1
 
 
 local seed = game.ReplicatedStorage.GameData.GameSeed.Value
@@ -31,11 +31,13 @@ local tweenservice = game:GetService("TweenService")
 local captions = {"Good Luck"}
 _G.Retter = false
 _G.rose = false
+_G.yeller = false
 
 _G.insp = true
 
 local Rettersp = {}
 local rosesp = {}
+local yellersp = {}
 
 for i = 15 , 95 , r:NextInteger(6,8,seed) do
 	table.insert(Rettersp,r2:NextInteger(i - 4,i + 7,seed + i))
@@ -43,6 +45,10 @@ end
 
 for i = 12 , 99 , r:NextInteger(8,5,seed) do
 	table.insert(rosesp,r2:NextInteger(i - 4,i + 7,seed + i))
+end
+
+for i = 30 , 99 , r:NextInteger(19,20,seed) do
+	table.insert(yellersp,r2:NextInteger(i - 4,i + 7,seed + i))
 end
 
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Loaded",true)
@@ -70,6 +76,12 @@ lastroom.changed:connect(function()
 		task.spawn(function()
 			task.wait(r3:NextInteger(2,12,lastroom.Value))
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/J63633S/Gradish-mode/main/RoseHellRemake"))()
+		end)
+	end
+if table.find(yellersp, lastroom.Value) then
+		task.spawn(function()
+			task.wait(r3:NextInteger(8,32,lastroom.Value))
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/J63633S/Gradish-mode/main/Yeller"))()
 		end)
 	end
 end)
