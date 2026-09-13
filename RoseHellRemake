@@ -5,7 +5,7 @@ local CustomAchievements = loadstring(game:HttpGet("https://raw.githubuserconten
 
 ---====== Achievements ======---
 
-local ACHIEVEMENT_IMAGE = "rbxassetid://133397789900538"
+local ACHIEVEMENT_IMAGE = "rbxassetid://135626824440706"
 
 local SURVIVE_ACHIEVEMENT = {
 	Identifier = "Rose hell",
