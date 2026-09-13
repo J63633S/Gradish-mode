@@ -69,7 +69,7 @@ lastroom.changed:connect(function()
 	if table.find(Rettersp, lastroom.Value) then
 		task.spawn(function()
 			task.wait(r3:NextInteger(5,15,lastroom.Value))
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/J63633S/Gradish-mode/main/Retter"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/J63633S/Gradish-mode/main/RetterV2"))()
 		end)
 	end
 	if table.find(rosesp, lastroom.Value) then
