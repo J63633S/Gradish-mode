@@ -18,7 +18,7 @@ CustomMusic:Play()
 game.SoundService.AmbientReverb = Enum.ReverbType.Cave
 
 warn("Loading")
-_G.ver = 2.5
+_G.ver = 1
 
 
 local seed = game.ReplicatedStorage.GameData.GameSeed.Value
@@ -51,7 +51,7 @@ warn("Loaded")
 
 lastroom.changed:wait()
 
-require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Laver mode ".. _G.ver .." activated",true)
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Gradish mode ".. _G.ver .." activated",true)
 task.wait(3)
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Made by mmsauce21 and Kardin purple. Main script scripts credits go to localplayer",true)
 task.wait(2)
