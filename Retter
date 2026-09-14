@@ -42,7 +42,7 @@ local entity = Spawner:Create({
 	Damage = {
 		Enabled = true,
 		IgnoreHiding = false,
-		Range = 330,
+		Range = 20,
 		Amount = 125
 	},
 	Crucifixion = {
