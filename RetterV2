@@ -16,16 +16,16 @@ local entity = Spawner:Create({
 			Enabled = true,
 			Duration = 3
 		},
-		Shatter = true,
+		Shatter = false,
 		Repair = false
 	},
 	Earthquake = {
 		Enabled = true
 	},
 	CameraShake = {
-		Enabled = false,
-		Range = 100,
-		Values = {1.5, 20, 0.1, 1} -- Magnitude, Roughness, FadeIn, FadeOut
+		Enabled = true,
+		Range = 80,
+		Values = {20, 10, 0.1, 1} -- Magnitude, Roughness, FadeIn, FadeOut
 	},
 	Movement = {
 		Speed = 80,
@@ -42,7 +42,7 @@ local entity = Spawner:Create({
 	Damage = {
 		Enabled = true,
 		IgnoreHiding = false,
-		Range = 330,
+		Range = 20,
 		Amount = 125
 	},
 	Crucifixion = {
